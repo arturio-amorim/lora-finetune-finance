@@ -1,0 +1,13 @@
+# Heavy ML stack — best run on a GPU (Colab/Kaggle free tiers work).
+# The data-prep module (src/finetune/data.py) and its tests need NONE of these.
+transformers>=4.44
+peft>=0.12
+trl>=0.11
+datasets>=2.20
+accelerate>=0.33
+torch>=2.2
+pyyaml>=6.0
+huggingface_hub>=0.24
+
+# Dev
+pytest>=8.0

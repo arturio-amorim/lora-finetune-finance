@@ -1,0 +1,25 @@
+# Fine-tuning configuration. Defaults target a SMALL model so it trains on a
+# free Colab/Kaggle GPU (and even slowly on CPU for a smoke test).
+
+model: Qwen/Qwen2.5-0.5B-Instruct   # small, capable, permissive license
+data_path: data/finance_sft.jsonl
+output_dir: outputs/lora-finance
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+training:
+  epochs: 3
+  batch_size: 2
+  grad_accum: 4
+  lr: 0.0002
+  max_seq_length: 1024
+  logging_steps: 5
+
+# Optional: push the trained adapter to the Hub (requires `huggingface-cli login`)
+hub:
+  push: false
+  repo_id: ""        # e.g. "arturio-amorim/qwen0.5b-finance-lora"

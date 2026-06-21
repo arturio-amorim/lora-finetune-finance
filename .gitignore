@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# Training artifacts / model weights
+outputs/
+*.safetensors
+*.bin
+wandb/
+runs/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
