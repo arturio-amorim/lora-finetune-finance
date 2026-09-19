@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![PEFT](https://img.shields.io/badge/PEFT-LoRA-ff6f00)
-!(https://img.shields.io/badge/%F0%9F%A4%97-Transformers%20%C2%B7%20TRL-yellow)
+
 
 Fine-tunes a **small open LLM** (default `Qwen2.5-0.5B-Instruct`) with **LoRA**
 into a concise **personal-finance assistant**, then compares the model
