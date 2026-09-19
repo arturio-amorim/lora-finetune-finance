@@ -16,7 +16,7 @@ a few MB.
 
 ## ✨ What it shows
 
-- **Parameter-efficient fine-tuning** (LoRA via 🤗 PEFT + TRL `SFTTrainer`).
+- **Parameter-efficient fine-tuning** (LoRA via  PEFT + TRL `SFTTrainer`).
 - **Correct SFT formatting** with the model's own chat template.
 - **Before/after comparison** on held-out prompts.
 - **Pure, unit-tested data layer** (formatting tested without torch).
